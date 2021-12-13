@@ -1,5 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 @app.route("/")
-def hello():
-  return "Hello, world! The source code for this is continuously deployed."
+def app_main():
+	var result = "<html><head><title>Hello World, Python Test App</title</head>\n<body><h1>Hello, World!</h1><p>From python via Azure.</p></body></html>\n"
+	return result
+
