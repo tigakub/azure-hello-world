@@ -1,7 +1,6 @@
 from flask import Flask
 from flask import request
 import json
-import requests
 
 #thingsboard_url = "https://thingsboard.cloud/api/v1/1nVPRLsj7bhDTGKLOidD/telemetry"
 
