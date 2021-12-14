@@ -1,8 +1,6 @@
 from flask import Flask
-from flask import request
-
 app = Flask(__name__)
-@app.route('/', methods=['POST'])
+@app.route('/')
 
 def hello():
   return 'Fucking unreliable piece of shit'
