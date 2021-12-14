@@ -10,7 +10,6 @@ app = Flask(__name__)
 def postJsonHandler():
   if request.is_json:
     post_data = request.get_json()
-    print(post_data)
-    return "Success!"
+    return post_data['voltage_1']
     #repost = requests.post(thingsboard_url, json=post_data)
     #return repost.status_code
