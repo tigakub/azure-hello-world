@@ -5,5 +5,6 @@ app = Flask(__name__)
 
 def hello():
   if request.is_json:
-    return 'Request is fucking json'
+    payload = request.json
+    return payload['voltage_1']
   return 'Fucking unreliable piece of shit'
