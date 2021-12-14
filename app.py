@@ -7,5 +7,5 @@ def hello():
   if request.is_json:
     data = request.get_json()
     v1 = data['voltage_1']
-    return 'Fuck Microsoft to infinity and beyond'
+    return v1
   return 'Fucking unreliable piece of shit'
