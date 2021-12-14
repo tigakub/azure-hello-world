@@ -8,6 +8,7 @@ app = Flask(__name__)
 @app.route('/postjson', methods=['POST'])
 
 def postJsonHandler():
+  return "Hello!"
   if request.is_json:
     post_data = request.get_json()
     return post_data['voltage_1']
