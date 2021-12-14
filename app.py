@@ -1,7 +1,6 @@
 from flask import Flask
 from flask import request
-import request as http_request
-import json
+import requests
 
 app = Flask(__name__)
 @app.route('/postjson', methods=['POST'])
