@@ -6,5 +6,6 @@ app = Flask(__name__)
 def hello():
   if request.is_json:
     data = request.get_json()
-    return 'Fuck Microsoft to infinity'
+    v1 = data['voltage_1']
+    return 'Fuck Microsoft to infinity and beyond'
   return 'Fucking unreliable piece of shit'
